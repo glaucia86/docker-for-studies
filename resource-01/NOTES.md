@@ -28,3 +28,17 @@ localhost:80
 ```
 
 And then include the message: "Hello World" and then open the **[localhost/messages/msg-0.txt](localhost/messages/msg-0.txt)**
+
+## Bind Mounts
+
+- Command to create a bind mount:
+
+```bash
+docker run /dir/data:/data
+```
+
+Example:
+
+```bash
+docker run -d -p 80:80 --name phpmessages_container -v <relative-path-local-folder>:/var/www/html/messages --rm phpmessages
+```
