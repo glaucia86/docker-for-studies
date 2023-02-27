@@ -42,3 +42,45 @@ Example:
 ```bash
 docker run -d -p 80:80 --name phpmessages_container -v <relative-path-local-folder>:/var/www/html/messages --rm phpmessages
 ```
+
+## Create Volume
+
+- Command to create a volume:
+
+```bash
+docker volume create <volume-name>
+``` 
+
+## List Volume
+
+- Command to list volumes:
+
+```bash
+docker volume ls
+```
+
+## Inspect Volume
+
+- Command to inspect volumes:
+
+```bash
+docker volume inspect <volume-name>
+```
+
+## Remove Volume
+
+- Command to remove volumes:
+
+```bash
+docker volume rm <volume-name>
+```
+
+## Remove volumes not used
+
+- Command to remove volumes not used:
+
+```bash
+docker volume prune
+```
+
+
